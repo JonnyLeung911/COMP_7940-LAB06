@@ -23,9 +23,9 @@ def main():
     updater = Updater(token=(os.environ['ACCESS_TOKEN']),  use_context=True)
     dispatcher = updater.dispatcher
     global redis1
-    redis1 = redis.Redis(host=(config['REDIS']['HOST']),
-        password=(config['REDIS']['PASSWORD']),
-        port=(config['REDIS']['REDISPORT']))
+    redis1 = redis.Redis(host=(os.environ['REDIS']['HOST']),
+        password=(os.environ['REDIS']['PASSWORD']),
+        port=(os.environ['REDIS']['REDISPORT']))
         
 # You can set this logging module, so you will know when
 # and why things do not work as expected Meanwhile, update your config.ini as:
