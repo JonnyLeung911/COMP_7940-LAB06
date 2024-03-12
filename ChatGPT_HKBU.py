@@ -3,12 +3,13 @@ import requests
 import os
 
 class HKBU_ChatGPT():
-    # def __init__(self,config_path='./config.ini'):
+    def __init__(self,config_path='./config.ini'):
     #     if type(config_path) == str:
     #         self.config = configparser.ConfigParser()
     #         self.config.read(config_path)
     #     elif type(config_path) == configparser.ConfigParser:
     #         self.config = config_path
+        pass
             
             
     def submit(self,message):
